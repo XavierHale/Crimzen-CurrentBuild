@@ -26,8 +26,7 @@ for /f "delims=" %%a in ('call ini.bat users.ini %userset% user') do (
 
 if %val%==%userset% (
     echo Logging in as %val%
-    echo Enter the password for %val%
-    set /p pass=Enter Password:
+    set /p pass= Enter the password for %val%:
     for /f "delims=" %%a in ('call ini.bat users.ini %userset% password') do (
     set val=%%a
 )
@@ -44,3 +43,11 @@ if %val%==%pass% (
     goto :login
 ) 
 :logon
+cls
+echo       ::::::::  
+echo     :+:    :+:  
+echo    +:+        
+echo   +#+         
+echo  +#+          
+echo #+#    #+#    
+echo ########

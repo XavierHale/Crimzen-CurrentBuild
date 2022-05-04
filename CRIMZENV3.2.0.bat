@@ -75,6 +75,7 @@ if %homemenu%==8 goto :shop
 if %homemenu%==9 goto :morgame
 if %homemenu%==exit goto :exit
 if %homemenu%==10 goto :logout
+if %homemenu%==11 goto :newacc
 if %homemenu%==dev goto :end
 goto :home
 :autoclick
@@ -122,6 +123,15 @@ echo 6	=	Yellow	 	E	=	Light Yellow
 echo 7	=	White	 	F	=	Bright White
 set /p color=Select a color form the table above. First digit is background, seccond is text. (Ex, for a white background and blue text, enter 71)
 color %color%
+goto :home
+:newacc
+cls
+echo Welcome to the Accout setup wizard!
+set /p newaccname=What will the name of your new account be?:
+echo [%newaccname%]>>users.ini
+echo user=%newaccname%>>users.ini
+set /p newaccpass=What will your password be?:
+echo password=%newaccpass%>>users.ini
 goto :home
 :logout
 cls 

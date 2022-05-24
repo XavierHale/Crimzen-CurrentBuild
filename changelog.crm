@@ -1,0 +1,3 @@
+-----Changelog-----
+May 24, 2022 3.3.1: Begining testing for servers! This is based on git and git crm, so make sure you have those installed!
+(Note: All commands are nonfunctional for now, as I am still developing and testing the network api) 

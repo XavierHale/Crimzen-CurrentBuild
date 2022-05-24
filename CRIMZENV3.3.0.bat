@@ -7,8 +7,10 @@ call initialize.bat
 title Crimzen Version %ver%
 echo Succesfuly loaded, welcome to Crimzen!
 echo Copyright 2021 CSBX inc.
-echo if you paid for this, you got scammed! This is freeware, and can be downloaded at
+echo If you paid for this, you got scammed! This is freeware, and can be downloaded at
 echo https://github.com/XavierHale/Crimzen-Client
+type changelog.crm
+echo.
 echo Loaded Succesfuly>errmsg.crm
 pause
 cls
@@ -43,12 +45,12 @@ echo l     l (2) Powershell       l    l (11) New Account  l
 echo l     l (?) CSBXterm         l    l                   l
 echo l     l----------------------l    l-------------------l
 echo l                             
-echo l     l-------Utilites-------l
-echo l     l (3) Notepad          l
-echo l     l (4) Autoclicker      l
-echo l     l (5) QDoS             l
-echo l     l (6) Iexpress Wizard  l
-echo l     l----------------------l
+echo l     l-------Utilites-------l    l---Servers (ALPHA TESING)---l
+echo l     l (3) Notepad          l    l (12) Connect to a server   l
+echo l     l (4) Autoclicker      l    l (13) Grab latest           l
+echo l     l (5) QDoS             l    l (14) Push to server (buggy)l
+echo l     l (6) Iexpress Wizard  l    l (15) Create a server       l
+echo l     l----------------------l    l----------------------------l
 echo l
 echo l     l-------Customize------l
 echo l     l (7) Change color     l

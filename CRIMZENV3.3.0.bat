@@ -36,34 +36,34 @@ echo l Copyright 2021                                                           
 ping 0.0.0.0.0 >nul  
 echo l V%ver% by CSBX inc.                                                                                                                     l
 ping 0.0.0.0.0 >nul  
-echo l Welcome, %user%!
+echo l Welcome, %user%!                                                                                                                        
 echo l-----------------------------------------------------------------------------------------------------------------------------------------l
-echo l
-echo l     l-------Terminals------l    l-----Accounts------l
-echo l     l (1) CMD              l    l (10) Log out      l
-echo l     l (2) Powershell       l    l (11) New Account  l
-echo l     l (?) CSBXterm         l    l                   l
-echo l     l----------------------l    l-------------------l
-echo l                             
-echo l     l-------Utilites-------l    l---Servers (ALPHA TESING)---l
-echo l     l (3) Notepad          l    l (12) Connect to a server   l
-echo l     l (4) Autoclicker      l    l (13) Grab latest           l
-echo l     l (5) QDoS             l    l (14) Push to server (buggy)l
-echo l     l (6) Iexpress Wizard  l    l (15) Create a server       l
-echo l     l----------------------l    l----------------------------l
-echo l
-echo l     l-------Customize------l
-echo l     l (7) Change color     l
-echo l     l (8) Online Shop      l
-echo l     l----------------------l
-echo l
-echo l     l---------Games--------l
-echo l     l (9) More Games       l
-echo l     l----------------------l
-echo l
-echo l
-echo l
-echo l
+echo l                                                                                                                                         l
+echo l     l-------Terminals------l    l-----Accounts------l                                                                                   l
+echo l     l (1) CMD              l    l (10) Log out      l                                                                                   l
+echo l     l (2) Powershell       l    l (11) New Account  l                                                                                   l
+echo l     l (?) CSBXterm         l    l                   l                                                                                   l
+echo l     l----------------------l    l-------------------l                                                                                   l
+echo l                                                                                                                                         l
+echo l     l-------Utilites-------l    l---Servers (ALPHA TESING)-----l                                                                        l
+echo l     l (3) Notepad          l    l (12) Enter server wizard     l                                                                        l
+echo l     l (4) Autoclicker      l    l------------------------------l                                                                        l
+echo l     l (5) QDoS             l                                                                                                            l
+echo l     l (6) Iexpress Wizard  l                                                                                                            l
+echo l     l----------------------l                                                                                                            l
+echo l                                                                                                                                         l
+echo l     l-------Customize------l                                                                                                            l
+echo l     l (7) Change color     l                                                                                                            l
+echo l     l (8) Online Shop      l                                                                                                            l
+echo l     l----------------------l                                                                                                            l
+echo l                                                                                                                                         l
+echo l     l---------Games--------l                                                                                                            l
+echo l     l (9) More Games       l                                                                                                            l
+echo l     l----------------------l                                                                                                            l
+echo l                                                                                                                                         l
+echo l                                                                                                                                         l
+echo l                                                                                                                                         l
+echo l                                                                                                                                         l
 echo l-----------------------------------------------------------------------------------------------------------------------------------------l
 set /p homemenu=What would you like to do?
 if %homemenu%==1 start cmd.exe
@@ -79,6 +79,8 @@ if %homemenu%==exit goto :exit
 if %homemenu%==10 goto :logout
 if %homemenu%==11 goto :newacc
 if %homemenu%==dev goto :end
+if %homemenu%==12 goto :servers
+
 goto :home
 :autoclick
 cd Resources\applets
@@ -278,6 +280,13 @@ pause
 goto :loadedshop
 )
 goto :loadedshop
-:exit 
+:servers
+cls
+echo Welcome to the server wizard!
 
-:end
+
+
+
+
+
+:exit

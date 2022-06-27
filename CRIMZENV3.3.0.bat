@@ -288,11 +288,17 @@ echo (1) Connect to a server
 echo (2) Grab latest from a server
 echo (3) Make a server (exprimental)
 echo (4) Push files to server
+echo (5) Back to home
 set /p servermenu=
 if %servermenu%==1 goto :getserver
 if %servermenu%==2 goto :grabserver
 if %servermenu%==3 goto :makeserver
 if %servermenu%==4 goto :pushserver
+if %servermenu%==5 goto :homemenu
+:getserver
+set /p getserverid=What server would you like to make a conection to? (ex {domain}/{server}.com)
+git clone https://github.com/%getserverid%
+goto :servers
 
 
 

@@ -5,6 +5,7 @@
 call verify.bat
 call initialize.bat
 title Crimzen Version %ver%
+echo Note that this project is discontinued. I do not intend to update this anymore
 echo Succesfuly loaded, welcome to Crimzen!
 echo Copyright 2021 CSBX inc.
 echo If you paid for this, you got scammed! This is freeware, and can be downloaded at
